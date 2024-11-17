@@ -2,13 +2,15 @@
     background-color: rgba(230,239,246,255);
     display: flex;
     justify-content: center;
-
+    align-content: center;
 }
+
 
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-radius: 5px;
     background-color: white;
     width: 50%;
@@ -16,21 +18,27 @@
     
 }
 
+.cont {
+    max-height: 100%;
+}
+
 .upper-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-height: 50%;
 }
 
 .lower-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
+    max-height: 50%;
 }
 
 .left-container {
+    color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,10 +46,12 @@
     background-color: rgba(42,178,177,255);
     width: 50%;
     max-height: 100%;
-   
+    padding: 3%;
 }
 
 .right-container {
+    color: aliceblue;
+    padding: 3%;
     width: 50%;
     background-color: rgba(74,190,189,255);
     max-height: 100%
@@ -49,9 +59,14 @@
 
 .button {
     width: 100%;
-    height: 3vh;
+    height: 5vh;
     border-radius: 5px;
     border: 0px;
+    margin-top: 4%;
     background-color: lightgreen;
     color: white;
+}
+
+.dollar-price {
+    font-size: 25px;
 }
